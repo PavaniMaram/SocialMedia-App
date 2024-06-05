@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>foodbook</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Add your CSS styles here */
+      img {
+        max-width: 100%; /* Ensure images don't exceed their container's width */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .profile-info img {
+        width: 75px; /* Adjust the profile picture width */
+        height: 50px; /* Adjust the profile picture height */
+      }
+      .user-posts img {
+        max-width: 100%; /* Adjust the maximum width of user posts */
+        height: auto; /* Maintain aspect ratio */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="center-heading">foodbook</h1>
+    <a href="/">Go back to home page</a>
+    <header>
+      <!-- Header content, including logo, navigation, and user information -->
+    </header>
+    <main>
+      <section class="user-profile">
+        <div class="profile-info">
+          <img src="css/pexels-fox-1172675.jpg" alt="User's Profile Picture" />
+          <h1>User Name</h1>
+          <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </section>
+      <section class="user-posts">
+        <article class="post">
+          <img src="css/pexels-fox-1172675.jpg" alt="User's Post" />
+          <p>Post caption goes here...</p>
+        </article>
+        <article class="post">
+          <img src="css/pexels-fox-1172675.jpg" alt="User's Post" />
+          <p>Another post caption...</p>
+        </article>
+        <!-- More user posts go here -->
+      </section>
+    </main>
+    <footer>
+      <!-- Footer content, such as navigation links and copyright information -->
+    </footer>
+  </body>
+</html>

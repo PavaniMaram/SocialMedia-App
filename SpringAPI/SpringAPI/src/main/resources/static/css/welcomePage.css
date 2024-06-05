@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+body {
+ 
+    background-image: url("../img/pineapple.jpg");
+    background-size: cover; /* or "contain" based on your preference */
+    background-repeat: no-repeat;
+    background-position: unset;
+
+  }
+  
+
+.headings {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+.centerItemHeadings {
+    font-style: italic;
+    font-weight: bold;
+    filter: backdrop-filter(blur(65px));
+    font-family: "Kaushan Script", cursive;
+    text-align: center;
+    color: gold;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: -0.75px -1px 0 rgb(15, 62, 204);
+
+}
+.outline{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.buttons{
+    color: rgb(62, 25, 55);
+    font-size: 1.9rem;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 80px;
+}
+@keyframes slide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .welcomePage {
+    animation: slide 0.5s ease-in-out;
+  }
+  

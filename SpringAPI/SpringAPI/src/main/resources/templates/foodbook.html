@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Starter Template</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <!-- 
+https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/korawan_m
+     -->
+    <nav class="navbar navbar-expand-lg px-4">
+      
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#aboutUs">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">recipies</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 040 2202889</p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <a class="nav-link" href="index.html">logout</a>         
+           </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">welcome to <strong class="banner-title ">foodbook</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row" id="aboutUs">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
+          <p class="my-4 text-muted w-75">we present you a varieties of recipies which unleashes your inner chef, elevate your meals, and let each recipe be a chapter in your delicious story. foodbook invites you to explore, create, and savor the magic of the kitchen, happy cooking </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/sweets-1.jpeg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about us -->
+
+
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row" id="home">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title ">recipies</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+          <a href="#cake" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">cakes</a>
+          <a href="#veggies" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">veggies</a>
+          <a href="#nonveg" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">non veg</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='item....' id="search-item">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="headings">
+        <h4 class="centerItemHeadings" id="cake">Cakes</h4>
+      </div>
+      <div class="row" id="store-cake-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container"> 
+              <a href="https://www.bhg.com/recipes/how-to/bake/how-to-make-cupcakes/"> 
+              <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
+              </a>
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cupcake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+             <a href="https://cafedelites.com/chocolate-cake/"> 
+              <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
+             </a> 
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">chocolate cake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+       
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <a href="https://sallysbakingaddiction.com/super-moist-chocolate-cupcakes/">
+              <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+              </a>
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">chocolate cupcake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <a href="https://sallysbakingaddiction.com/vanilla-cake/">
+              <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+              </a>
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">vanilla cake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+            <a href="https://www.simplyrecipes.com/recipes/blueberry_cake/">
+              <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+              </a>
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Blueberry cupcake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+            <a href="https://cakesbymk.com/recipe/soft-strawberry-cake/">
+              <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+             </a>
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">strawberry cake</h5>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+          <!--end of single store item-->
+      </div>
+      <div class="headings">
+        <h4 class="centerItemHeadings" id="veggies">Veggies</h4>
+      </div>
+      <div class="row" id="store-veggies-items">
+         <!-- single item -->
+         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+             <a href="https://hebbarskitchen.com/dal-tadka-recipe-yellow-dal-tadka/">
+              <img src="img/Dal tadka.jpg" class="card-img-top store-img" alt="">
+             </a> 
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Dal tadka</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of item-->
+        </div>
+                 <!-- single item -->
+                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+                  <div class="card ">
+                    <div class="img-container">
+                    <a href="https://www.indianhealthyrecipes.com/paneer-tikka-on-stove-top/">
+                      <img src="img/paneer tikka.jpg" class="card-img-top store-img" alt="">
+                    </a>  
+                    </div>
+                    <div class="card-body">
+                      <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="store-item-name">Paneer tikka</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of item-->
+                </div>
+                  <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+                  <div class="card ">
+                    
+                    <div class="img-container">
+                    <a href="https://www.vegrecipesofindia.com/dosa-recipe-dosa-batter-recipe/">
+                      <img src="img/Dosa.jpeg" class="card-img-top store-img" alt="">
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="store-item-name">Dosa</h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+          <!-- end of item-->
+        </div>
+        
+        
+      </div>
+      <div class="headings">
+        <h4 class="centerItemHeadings" id="nonveg">Non veg</h4>
+      </div>
+      <div class="row" id="store-nonveg-items">
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+            <a href="https://desertfoodfeed.com/kingfish-vanjaram-fish-fry/">
+              <img src="img/Vanjaram Fish Fry.jpeg" class="card-img-top store-img" alt="">
+             </a>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Vanjaram Fish Fry</h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of item-->
+        </div>
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+         <div class="card ">
+           <div class="img-container">
+          <a href="https://maunikagowardhan.co.uk/cook-in-a-curry/indian-chilli-chicken-batter-fried-chicken-coated-in-a-garlic-soy-chilli-gravy/">
+             <img src="img/chilli chicken.jpeg" class="card-img-top store-img" alt="">
+            </a>
+           </div>
+           <div class="card-body">
+             <div class="card-text d-flex justify-content-between text-capitalize">
+               <h5 id="store-item-name">chilli chicken</h5>
+             </div>
+           </div>
+         </div>
+         <!-- end of item-->
+       </div>
+                <!-- single item -->
+               <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+                 <div class="card ">
+                   <a href=""></a>
+                   <div class="img-container">
+                  <a href="https://myfoodstory.com/indian-mutton-curry-recipe/">
+                     <img src="img/Mutton curry.jpeg" class="card-img-top store-img" alt="">
+                   </a>
+                   </div>
+                   <div class="card-body">
+                     <div class="card-text d-flex justify-content-between text-capitalize">
+                       <h5 id="store-item-name">Mutton curry</h5>
+                     </div>
+                   </div>
+                 </div>
+
+         <!-- end of item-->
+       </div>
+       
+       
+     </div>
+  </section>
+  <!--end of store items -->
+
+</body>
+
+</html>
